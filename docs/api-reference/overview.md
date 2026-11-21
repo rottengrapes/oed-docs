@@ -114,7 +114,7 @@ Every endpoint registered in the ObservEarth public API is listed below:
 | **modis** | `POST` | `/api/modis/all-in-one/` | `modis_all-in-one_create` | [MODIS API](modis.md#5-all-in-one-multi-index-bundle) |
 | | `GET` | `/api/modis/image/{geometry_id}/` | `modis_image_read` | [MODIS API](modis.md#4-render-modis-image) |
 | | `GET` | `/api/modis/indices/` | `modis_indices_list` | [MODIS API](modis.md#6-list-modis-indices-by-collection) |
-| | `GET` | `/api/modis/info/` | `modis_info_list` | [MODIS API](modis.md#7-modis-index-metadata--collections) |
+| | `GET` | `/api/modis/info/` | `modis_info_list` | [MODIS API](modis.md#7-modis-index-metadata-collections) |
 | | `POST` | `/api/modis/search/` | `modis_search_create` | [MODIS API](modis.md#1-search-modis-scenes) |
 | | `POST` | `/api/modis/stats/` | `modis_stats_create` | [MODIS API](modis.md#3-date-range-modis-statistics-time-series) |
 | | `GET` | `/api/modis/stats/{geometry_id}/` | `modis_stats_read` | [MODIS API](modis.md#2-single-scene-modis-statistics) |
@@ -123,7 +123,7 @@ Every endpoint registered in the ObservEarth public API is listed below:
 | | `GET` | `/api/s1/data-request/history/` | `s1_data-request_history_list` | [Sentinel-1 API](sentinel-1.md#9-asynchronous-sar-job-history) |
 | | `GET` | `/api/s1/data-request/status/{job_id}/` | `s1_data-request_status_read` | [Sentinel-1 API](sentinel-1.md#8-asynchronous-sar-job-status) |
 | | `GET` | `/api/s1/image/{geometry_id}/` | `s1_image_read` | [Sentinel-1 API](sentinel-1.md#4-render-sar-image) |
-| | `GET` | `/api/s1/info/` | `s1_info_list` | [Sentinel-1 API](sentinel-1.md#10-list-supported-sar-polarizations--metrics) |
+| | `GET` | `/api/s1/info/` | `s1_info_list` | [Sentinel-1 API](sentinel-1.md#10-list-supported-sar-polarizations-metrics) |
 | | `GET` | `/api/s1/raw-band/{geometry_id}/` | `s1_raw-band_read` | [Sentinel-1 API](sentinel-1.md#6-raw-sar-backscatter-band) |
 | | `POST` | `/api/s1/search/` | `s1_search_create` | [Sentinel-1 API](sentinel-1.md#1-search-sar-scenes) |
 | | `POST` | `/api/s1/stats/` | `s1_stats_create` | [Sentinel-1 API](sentinel-1.md#3-date-range-sar-statistics-time-series) |
@@ -139,7 +139,7 @@ Every endpoint registered in the ObservEarth public API is listed below:
 | | `POST` | `/api/s2/stats/` | `s2_stats_create` | [Sentinel-2 API](sentinel-2.md#3-date-range-sentinel-2-statistics-time-series) |
 | | `GET` | `/api/s2/stats/{geometry_id}/` | `s2_stats_read` | [Sentinel-2 API](sentinel-2.md#2-single-scene-sentinel-2-statistics) |
 | **verify-api-key** | `POST` | `/api/verify-api-key/` | `verify-api-key_create` | [Utility API](misc.md#3-verify-api-key) |
-| **weather** | `GET` | `/api/weather/current/` | `weather_current_list` | [Weather API](weather.md#1-current-weather--agronomic-telemetry) |
+| **weather** | `GET` | `/api/weather/current/` | `weather_current_list` | [Weather API](weather.md#1-current-weather-agronomic-telemetry) |
 | | `GET` | `/api/weather/forecast/` | `weather_forecast_list` | [Weather API](weather.md#3-16-day-weather-forecast) |
 | | `GET` | `/api/weather/historical/` | `weather_historical_list` | [Weather API](weather.md#4-historical-weather-archive) |
 | | `GET` | `/api/weather/today/` | `weather_today_list` | [Weather API](weather.md#2-todays-hourly-weather-forecast) |
