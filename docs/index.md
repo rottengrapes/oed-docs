@@ -10,26 +10,33 @@ ObservEarth empowers developers, agritech firms, researchers, forestry managers,
 
 Instead of wrestling with complex raw geospatial data pipelines, gigabyte-sized GeoTIFFs, or complex atmospheric correction algorithms, ObservEarth provides unified RESTful APIs and an intuitive web dashboard.
 
-```
-                           +---------------------------+
-                           |   ObservEarth API Gateway |
-                           |  (Authentication: UUID)   |
-                           +-------------+-------------+
-                                         |
-     +-------------------+---------------+-------------------+-------------------+
-     |                   |                                   |                   |
-+----+----+         +----+----+                         +----+----+         +----+----+
-| Sentinel|         | Sentinel|                         | Landsat |         | Weather |
-| -2 L2A  |         | -1 SAR  |                         |  8 & 9  |         |   & AQ  |
-+----+----+         +----+----+                         +----+----+         +----+----+
-     |                   |                                   |                   |
-     |                   |                                   |                   |
-+----+----+         +----+----+                         +----+----+         +----+----+
-| 2.5m    |         | Radar   |                         | 30m     |         | Current |
-| SEN2SR  |         | Polar   |                         | Thermal |         | Hourly  |
-| SuperRes|         | Backscat|                         | Indices |         | Forecast|
-+---------+         +---------+                         +---------+         +---------+
-```
+<div class="grid cards" markdown>
+
+-   🌐 __ObservEarth Web__
+
+    ---
+
+    Access the main ObservEarth cloud platform, user portal, and web mapping interface.
+
+    [Launch ObservEarth →](https://observearth.com){ target="_blank" }
+
+-   🧭 __Platform Walkthrough__
+
+    ---
+
+    Step-by-step walkthrough covering signup, dashboard navigation, satellite analytics, and alerts.
+
+    [Start Walkthrough →](guides/walkthrough/signup-login.md)
+
+-   ⚡ __API Reference__
+
+    ---
+
+    Comprehensive RESTful endpoint specifications, authentication, headers, and code examples.
+
+    [Explore APIs →](api-reference/overview.md)
+
+</div>
 
 ---
 
@@ -59,63 +66,3 @@ Instead of wrestling with complex raw geospatial data pipelines, gigabyte-sized 
 
 * **Persistent spatial monitoring**: Continuous automated background scanning on your registered Areas of Interest (AOIs).
 * **Conditional threshold triggers**: Immediate notifications when new satellite scenes detect threshold breaches (e.g., NDVI < 0.35 or NDWI < -0.1).
-
----
-
-## Quick Navigation
-
-<div class="grid cards" markdown>
-
--   :material-account-plus:{ .lg .middle } __Getting Started__
-
-    ---
-
-    Create your account, understand account tiers, and obtain your secret API Key.
-
-    [:octicons-arrow-right-24: Account Setup](get-started/account-creation.md)
-
--   :material-key:{ .lg .middle } __Authentication__
-
-    ---
-
-    Learn how to pass `X-API-Key` headers and authenticate requests securely.
-
-    [:octicons-arrow-right-24: Authentication Guide](get-started/api-keys-auth.md)
-
--   :material-view-dashboard:{ .lg .middle } __Dashboard Guide__
-
-    ---
-
-    Explore the interactive map interface, create AOIs, and view visual satellite layers.
-
-    [:octicons-arrow-right-24: Dashboard Walkthrough](guides/walkthrough/dashboard.md)
-
--   :material-api:{ .lg .middle } __Full API Reference__
-
-    ---
-
-    Comprehensive endpoint specifications, payloads, responses, error codes, and cURL requests.
-
-    [:octicons-arrow-right-24: Explore APIs](api-reference/overview.md)
-
-</div>
-
----
-
-## Quick Example: First API Call in 30 Seconds
-
-All ObservEarth API endpoints require your API key passed in the `X-API-Key` HTTP header:
-
-```bash
-# Verify your API key
-curl -X POST "https://observearth.com/api/verify-api-key/" \
-     -H "X-API-Key: YOUR_API_KEY_HERE" \
-     -H "Content-Type: application/json"
-```
-
-Expected response:
-```json
-{
-  "valid": true
-}
-```

@@ -21,17 +21,14 @@ nav = [
         { "Plans, Quotas & Limits" = "get-started/subscription-plans.md" }
     ]},
     { "User Guides" = [
-        { "Platform Walkthrough" = [
-            { "Signup, Login & Profile" = "guides/walkthrough/signup-login.md" },
-            { "Dashboard Overview" = "guides/walkthrough/dashboard.md" },
-            { "AOI Creation & Drawing" = "guides/walkthrough/aoi-management.md" },
-            { "Satellite & Analytics" = "guides/walkthrough/satellite-analytics.md" },
-            { "Weather & Telemetry" = "guides/walkthrough/weather.md" },
-            { "Alerts & Monitoring" = "guides/walkthrough/alerts.md" },
-            { "API Usage & Quotas" = "guides/walkthrough/api-usage.md" },
-            { "Satellites & Index Catalog" = "guides/walkthrough/catalog.md" }
-        ]},
-        { "AOI Management Reference" = "guides/aoi-management.md" }
+        { "Signup, Login & Profile" = "guides/walkthrough/signup-login.md" },
+        { "Dashboard Overview" = "guides/walkthrough/dashboard.md" },
+        { "AOI Creation & Drawing" = "guides/walkthrough/aoi-management.md" },
+        { "Satellite & Analytics" = "guides/walkthrough/satellite-analytics.md" },
+        { "Weather & Telemetry" = "guides/walkthrough/weather.md" },
+        { "Alerts & Monitoring" = "guides/walkthrough/alerts.md" },
+        { "API Usage & Quotas" = "guides/walkthrough/api-usage.md" },
+        { "Satellites & Index Catalog" = "guides/walkthrough/catalog.md" }
     ]},
     { "API Reference" = [
         { "API Overview & Standards" = "api-reference/overview.md" },
@@ -97,6 +94,7 @@ toggle.name = "Switch to system preference"
 [project.markdown_extensions]
 toc = { permalink = true }
 admonition = {}
+md_in_html = {}
 codehilite = { guess_lang = false }
 pymdownx.highlight = { anchor_linenums = true, line_spans = "__span", pygments_lang_class = true }
 pymdownx.inlinehilite = {}

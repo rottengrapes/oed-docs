@@ -362,28 +362,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#quick-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Quick Navigation
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-example-first-api-call-in-30-seconds" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Quick Example: First API Call in 30 Seconds
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -548,6 +526,18 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -583,70 +573,6 @@
               
   
   User Guides
-
-            </label>
-            <ul class="md-nav__list" data-md-scrollfix>
-              
-                
-                  
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Platform Walkthrough
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-            <label class="md-nav__title" for="__nav_3_1">
-              <span class="md-nav__icon md-icon"></span>
-              
-  
-  Platform Walkthrough
 
             </label>
             <ul class="md-nav__list" data-md-scrollfix>
@@ -855,42 +781,6 @@
     
   
   Satellites & Index Catalog
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-                
-              
-            </ul>
-          </nav>
-        
-      
-    </li>
-  
-
-                
-              
-                
-                  
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="./guides/aoi-management/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  AOI Management Reference
 
     
   </span>
@@ -1427,28 +1317,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#quick-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Quick Navigation
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-example-first-api-call-in-30-seconds" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Quick Example: First API Call in 30 Seconds
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1480,25 +1348,28 @@
 <h2 id="what-is-observearth">What is ObservEarth?<a class="headerlink" href="#what-is-observearth" title="Permanent link">&para;</a></h2>
 <p>ObservEarth empowers developers, agritech firms, researchers, forestry managers, urban planners, and environmental analysts to seamlessly access, analyze, and visualize high-resolution multi-spectral and radar satellite imagery alongside hyper-local weather and air quality datasets.</p>
 <p>Instead of wrestling with complex raw geospatial data pipelines, gigabyte-sized GeoTIFFs, or complex atmospheric correction algorithms, ObservEarth provides unified RESTful APIs and an intuitive web dashboard.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                           +---------------------------+
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                           |   ObservEarth API Gateway |
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                           |  (Authentication: UUID)   |
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                           +-------------+-------------+
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                                         |
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>     +-------------------+---------------+-------------------+-------------------+
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>     |                   |                                   |                   |
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>+----+----+         +----+----+                         +----+----+         +----+----+
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>| Sentinel|         | Sentinel|                         | Landsat |         | Weather |
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>| -2 L2A  |         | -1 SAR  |                         |  8 &amp; 9  |         |   &amp; AQ  |
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>+----+----+         +----+----+                         +----+----+         +----+----+
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>     |                   |                                   |                   |
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>     |                   |                                   |                   |
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>+----+----+         +----+----+                         +----+----+         +----+----+
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>| 2.5m    |         | Radar   |                         | 30m     |         | Current |
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>| SEN2SR  |         | Polar   |                         | Thermal |         | Hourly  |
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>| SuperRes|         | Backscat|                         | Indices |         | Forecast|
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>+---------+         +---------+                         +---------+         +---------+
-</span></code></pre></div>
+<div class="grid cards">
+<ul>
+<li>
+<p>🌐 <strong>ObservEarth Web</strong></p>
+<hr />
+<p>Access the main ObservEarth cloud platform, user portal, and web mapping interface.</p>
+<p><a href="https://observearth.com" target="_blank">Launch ObservEarth →</a></p>
+</li>
+<li>
+<p>🧭 <strong>Platform Walkthrough</strong></p>
+<hr />
+<p>Step-by-step walkthrough covering signup, dashboard navigation, satellite analytics, and alerts.</p>
+<p><a href="guides/walkthrough/signup-login/">Start Walkthrough →</a></p>
+</li>
+<li>
+<p>⚡ <strong>API Reference</strong></p>
+<hr />
+<p>Comprehensive RESTful endpoint specifications, authentication, headers, and code examples.</p>
+<p><a href="api-reference/overview/">Explore APIs →</a></p>
+</li>
+</ul>
+</div>
 <hr />
 <h2 id="core-capabilities">Core Capabilities<a class="headerlink" href="#core-capabilities" title="Permanent link">&para;</a></h2>
 <h3 id="multi-constellation-satellite-imagery">🛰️ Multi-Constellation Satellite Imagery<a class="headerlink" href="#multi-constellation-satellite-imagery" title="Permanent link">&para;</a></h3>
@@ -1526,57 +1397,6 @@
 <li><strong>Persistent spatial monitoring</strong>: Continuous automated background scanning on your registered Areas of Interest (AOIs).</li>
 <li><strong>Conditional threshold triggers</strong>: Immediate notifications when new satellite scenes detect threshold breaches (e.g., NDVI &lt; 0.35 or NDWI &lt; -0.1).</li>
 </ul>
-<hr />
-<h2 id="quick-navigation">Quick Navigation<a class="headerlink" href="#quick-navigation" title="Permanent link">&para;</a></h2>
-<div class="grid cards" markdown>
-
--   :material-account-plus:{ .lg .middle } __Getting Started__
-
-    ---
-
-    Create your account, understand account tiers, and obtain your secret API Key.
-
-    [:octicons-arrow-right-24: Account Setup](get-started/account-creation.md)
-
--   :material-key:{ .lg .middle } __Authentication__
-
-    ---
-
-    Learn how to pass `X-API-Key` headers and authenticate requests securely.
-
-    [:octicons-arrow-right-24: Authentication Guide](get-started/api-keys-auth.md)
-
--   :material-view-dashboard:{ .lg .middle } __Dashboard Guide__
-
-    ---
-
-    Explore the interactive map interface, create AOIs, and view visual satellite layers.
-
-    [:octicons-arrow-right-24: Dashboard Walkthrough](guides/walkthrough/dashboard.md)
-
--   :material-api:{ .lg .middle } __Full API Reference__
-
-    ---
-
-    Comprehensive endpoint specifications, payloads, responses, error codes, and cURL requests.
-
-    [:octicons-arrow-right-24: Explore APIs](api-reference/overview.md)
-
-</div>
-
-<hr />
-<h2 id="quick-example-first-api-call-in-30-seconds">Quick Example: First API Call in 30 Seconds<a class="headerlink" href="#quick-example-first-api-call-in-30-seconds" title="Permanent link">&para;</a></h2>
-<p>All ObservEarth API endpoints require your API key passed in the <code>X-API-Key</code> HTTP header:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Verify your API key</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">"https://observearth.com/api/verify-api-key/"</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">"X-API-Key: YOUR_API_KEY_HERE"</span><span class="w"> </span><span class="se">\</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">     </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span>
-</span></code></pre></div>
-<p>Expected response:
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
-</span></code></pre></div></p>
 
 
 
