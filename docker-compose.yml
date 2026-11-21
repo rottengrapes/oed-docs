@@ -1,4 +1,5 @@
 services:
+  # ObservEarth Documentation Server
   zensical:
     image: zensical/zensical:latest
     container_name: observearth-docs
@@ -7,9 +8,16 @@ services:
       - "${ZENSICAL_PORT:-7890}:8000"
     volumes:
       - .:/docs
-    command: serve --dev-addr 0.0.0.0:8000
+    command: serve -f mkdocs.yml --dev-addr 0.0.0.0:8000
+    env_file:
+      - .env
     environment:
       - PYTHONUNBUFFERED=1
+      - SITE_URL=${SITE_URL:-https://docs.observearth.com/}
+      - SITE_NAME=${SITE_NAME:-ObservEarth Developer & User Guide}
+      - SITE_DESCRIPTION=${SITE_DESCRIPTION:-Comprehensive user guide and complete API reference documentation for ObservEarth Earth Observation & Weather platform.}
+      - SITE_AUTHOR=${SITE_AUTHOR:-Rotten Grapes Tech / ObservEarth Team}
+      - SITE_COPYRIGHT=${SITE_COPYRIGHT:-Copyright &copy; 2026 ObservEarth / Rotten Grapes Tech}
 
   # Alternative fallback using mkdocs-material
   mkdocs:
@@ -22,3 +30,12 @@ services:
     volumes:
       - .:/docs
     command: serve --dev-addr 0.0.0.0:8000
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SITE_URL=${SITE_URL:-https://docs.observearth.com/}
+      - SITE_NAME=${SITE_NAME:-ObservEarth Developer & User Guide}
+      - SITE_DESCRIPTION=${SITE_DESCRIPTION:-Comprehensive user guide and complete API reference documentation for ObservEarth Earth Observation & Weather platform.}
+      - SITE_AUTHOR=${SITE_AUTHOR:-Rotten Grapes Tech / ObservEarth Team}
+      - SITE_COPYRIGHT=${SITE_COPYRIGHT:-Copyright &copy; 2026 ObservEarth / Rotten Grapes Tech}

@@ -1,8 +1,9 @@
 [project]
+# Production site metadata (can also be loaded dynamically via mkdocs.yml and .env)
 site_name = "ObservEarth Developer & User Guide"
 site_description = "Comprehensive user guide and complete API reference documentation for ObservEarth Earth Observation & Weather platform."
 site_author = "Rotten Grapes Tech / ObservEarth Team"
-site_url = "https://observearth.com/docs/"
+site_url = "https://docs.observearth.com/"
 copyright = "Copyright &copy; 2026 ObservEarth / Rotten Grapes Tech"
 extra_css = [
     "stylesheets/extra.css",

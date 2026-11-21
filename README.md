@@ -19,6 +19,22 @@ Whenever you edit any `.md` file inside `docs/` or adjust `zensical.toml`, the s
 
 ---
 
+## Configuration & Environment Variables (.env)
+
+Configuration variables (site URL, site title, description, ports) are configured in `.env` (copy from `.env.example` if needed):
+
+```bash
+# Production Site Metadata & URL
+SITE_URL=https://docs.observearth.com/
+SITE_NAME=ObservEarth Developer & User Guide
+DOCS_PORT=7890
+ZENSICAL_PORT=7890
+```
+
+`mkdocs.yml` dynamically resolves these variables via `!ENV [VAR_NAME, fallback]`, which is also used by Zensical when running with `-f mkdocs.yml`.
+
+---
+
 ## Alternative: Build Static Site
 
 To compile static HTML/CSS/JS assets for production deployment:

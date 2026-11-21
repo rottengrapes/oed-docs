@@ -1,8 +1,8 @@
-site_name: ObservEarth Developer & User Guide
-site_description: Comprehensive user guide and complete API reference documentation for ObservEarth Earth Observation & Weather platform.
-site_author: Rotten Grapes Tech / ObservEarth Team
-site_url: https://observearth.com/docs/
-copyright: Copyright &copy; 2026 ObservEarth / Rotten Grapes Tech
+site_name: !ENV [SITE_NAME, "ObservEarth Developer & User Guide"]
+site_description: !ENV [SITE_DESCRIPTION, "Comprehensive user guide and complete API reference documentation for ObservEarth Earth Observation & Weather platform."]
+site_author: !ENV [SITE_AUTHOR, "Rotten Grapes Tech / ObservEarth Team"]
+site_url: !ENV [SITE_URL, "https://docs.observearth.com/"]
+copyright: !ENV [SITE_COPYRIGHT, "Copyright &copy; 2026 ObservEarth / Rotten Grapes Tech"]
 
 extra_css:
   - stylesheets/extra.css

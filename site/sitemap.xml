@@ -1,87 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://observearth.com/docs/</loc>
+        <loc>https://docs.observearth.com/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/air-quality/</loc>
+        <loc>https://docs.observearth.com/api-reference/air-quality/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/alerts/</loc>
+        <loc>https://docs.observearth.com/api-reference/alerts/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/analytics/</loc>
+        <loc>https://docs.observearth.com/api-reference/analytics/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/dem-elevation/</loc>
+        <loc>https://docs.observearth.com/api-reference/dem-elevation/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/geometry/</loc>
+        <loc>https://docs.observearth.com/api-reference/geometry/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/landsat/</loc>
+        <loc>https://docs.observearth.com/api-reference/landsat/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/misc/</loc>
+        <loc>https://docs.observearth.com/api-reference/misc/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/modis/</loc>
+        <loc>https://docs.observearth.com/api-reference/modis/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/overview/</loc>
+        <loc>https://docs.observearth.com/api-reference/overview/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/sentinel-1/</loc>
+        <loc>https://docs.observearth.com/api-reference/sentinel-1/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/sentinel-2/</loc>
+        <loc>https://docs.observearth.com/api-reference/sentinel-2/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/api-reference/weather/</loc>
+        <loc>https://docs.observearth.com/api-reference/weather/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/examples/curl-cheatsheet/</loc>
+        <loc>https://docs.observearth.com/examples/curl-cheatsheet/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/examples/javascript-quickstart/</loc>
+        <loc>https://docs.observearth.com/examples/javascript-quickstart/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/examples/python-quickstart/</loc>
+        <loc>https://docs.observearth.com/examples/python-quickstart/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/get-started/account-creation/</loc>
+        <loc>https://docs.observearth.com/get-started/account-creation/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/get-started/api-keys-auth/</loc>
+        <loc>https://docs.observearth.com/get-started/api-keys-auth/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/get-started/subscription-plans/</loc>
+        <loc>https://docs.observearth.com/get-started/subscription-plans/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/aoi-management/</loc>
+        <loc>https://docs.observearth.com/guides/aoi-management/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/alerts/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/alerts/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/aoi-management/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/aoi-management/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/api-usage/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/api-usage/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/catalog/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/catalog/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/dashboard/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/dashboard/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/satellite-analytics/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/satellite-analytics/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/signup-login/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/signup-login/</loc>
       </url>
       <url>
-        <loc>https://observearth.com/docs/guides/walkthrough/weather/</loc>
+        <loc>https://docs.observearth.com/guides/walkthrough/weather/</loc>
       </url>
 </urlset>

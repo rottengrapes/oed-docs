@@ -2,3 +2,5 @@ site.old/
 cache.old/
 site_backup/
 .cache/
+.env
+*.env
