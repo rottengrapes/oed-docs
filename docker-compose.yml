@@ -4,21 +4,21 @@ services:
     container_name: observearth-docs
     restart: unless-stopped
     ports:
-      - "7890:8000"
+      - "${ZENSICAL_PORT:-7890}:8000"
     volumes:
       - .:/docs
     command: serve --dev-addr 0.0.0.0:8000
     environment:
       - PYTHONUNBUFFERED=1
 
-  # Alternative fallback using squidfunk/mkdocs-material if zensical image is not pulled
+  # Alternative fallback using mkdocs-material
   mkdocs:
     image: squidfunk/mkdocs-material:latest
     container_name: observearth-mkdocs-fallback
     profiles: ["mkdocs"]
     restart: unless-stopped
     ports:
-      - "7892:8000"
+      - "${MKDOCS_PORT:-7892}:8000"
     volumes:
       - .:/docs
     command: serve --dev-addr 0.0.0.0:8000
