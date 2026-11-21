@@ -1,0 +1,247 @@
+/* ==========================================================================
+   ObservEarth Documentation - Custom Layout Styles
+   Optimizations to reduce left and right panel margins on large screens
+   ========================================================================== */
+
+/* Reduce outer margins of the right and left panels on large screens */
+@media screen and (min-width: 76.25em) {
+  /* Expand the main grid container from default 61rem (1220px) to 95% of the viewport */
+  .md-grid {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Left navigation panel: position closer to viewport edge and reduce margins */
+  .md-sidebar--primary {
+    left: 0;
+    margin-left: 0;
+    width: 14rem;
+  }
+
+  /* Right table-of-contents panel: position closer to viewport edge and reduce margins */
+  .md-sidebar--secondary {
+    right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 14rem;
+  }
+
+  /* Tighten inner scrolling container padding inside panels */
+  .md-sidebar__scrollwrap {
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+
+  /* Content area adjustment */
+  .md-content {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .md-content__inner {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    max-width: 100%;
+  }
+}
+
+/* Further optimizations for wide / 1440p / 4K displays */
+@media screen and (min-width: 100em) {
+  .md-grid {
+    max-width: 96%;
+  }
+
+  .md-sidebar--primary {
+    width: 15rem;
+  }
+
+  .md-sidebar--secondary {
+    width: 15rem;
+  }
+
+  .md-content__inner {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+/* Image presentation and responsive sizing */
+.md-content img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* ==========================================================================
+   Image Lightbox & Zoom Popup Styles
+   ========================================================================== */
+
+.image-lightbox-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 1.2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.image-lightbox-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.1);
+}
+
+.image-lightbox-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0 !important;
+}
+
+/* Floating zoom expand icon badge */
+.image-lightbox-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(15, 23, 42, 0.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.image-lightbox-wrapper:hover .image-lightbox-badge {
+  opacity: 1;
+  transform: scale(1.05);
+  background: rgba(13, 148, 136, 0.95); /* ObservEarth teal accent */
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.image-lightbox-badge svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+}
+
+/* Lightbox Modal Fullscreen Overlay */
+.image-lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+}
+
+.image-lightbox-modal.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.image-lightbox-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  cursor: pointer;
+}
+
+.image-lightbox-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: rgba(15, 23, 42, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+}
+
+.image-lightbox-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+
+.image-lightbox-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.image-lightbox-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+}
+
+.image-lightbox-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+  color: #ffffff;
+}
+
+.image-lightbox-body {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.image-lightbox-content {
+  max-width: 94vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  transform: scale(0.96);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: zoom-out;
+}
+
+.image-lightbox-modal.is-active .image-lightbox-content {
+  transform: scale(1);
+}

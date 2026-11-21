@@ -1,0 +1,114 @@
+site_name: ObservEarth Developer & User Guide
+site_description: Comprehensive user guide and complete API reference documentation for ObservEarth Earth Observation & Weather platform.
+site_author: Rotten Grapes Tech / ObservEarth Team
+site_url: https://observearth.com/docs/
+copyright: Copyright &copy; 2026 ObservEarth / Rotten Grapes Tech
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+nav:
+  - Overview: index.md
+  - Getting Started:
+      - Creating an Account: get-started/account-creation.md
+      - API Keys & Authentication: get-started/api-keys-auth.md
+      - Plans, Quotas & Limits: get-started/subscription-plans.md
+  - User Guides:
+      - Platform Walkthrough:
+          - Signup, Login & Profile: guides/walkthrough/signup-login.md
+          - Dashboard Overview: guides/walkthrough/dashboard.md
+          - AOI Creation & Drawing: guides/walkthrough/aoi-management.md
+          - Satellite & Analytics: guides/walkthrough/satellite-analytics.md
+          - Weather & Telemetry: guides/walkthrough/weather.md
+          - Alerts & Monitoring: guides/walkthrough/alerts.md
+          - API Usage & Quotas: guides/walkthrough/api-usage.md
+          - Satellites & Index Catalog: guides/walkthrough/catalog.md
+      - AOI Management Reference: guides/aoi-management.md
+  - API Reference:
+      - API Overview & Standards: api-reference/overview.md
+      - Geometry & AOI API: api-reference/geometry.md
+      - Sentinel-2 (Optical) API: api-reference/sentinel-2.md
+      - Sentinel-1 (SAR Radar) API: api-reference/sentinel-1.md
+      - Landsat API: api-reference/landsat.md
+      - MODIS Satellite API: api-reference/modis.md
+      - Weather API: api-reference/weather.md
+      - Air Quality API: api-reference/air-quality.md
+      - DEM & Contours API: api-reference/dem-elevation.md
+      - Automated Index Alerts API: api-reference/alerts.md
+      - API Analytics & Logs API: api-reference/analytics.md
+      - Utility & Verification API: api-reference/misc.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: emerald
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: emerald
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
